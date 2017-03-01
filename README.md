@@ -1,5 +1,8 @@
 # Haskell Play
 
+* Download ```Stack``` by ```curl -sSL https://get.haskellstack.org/ | sh```
+* ```stack setup``` from the root of this project
+
 * To run a script ```stack runhaskell ./app/hello.hs```
 * To launch interactive shell ```stack ghci```. To quit ```:q```
 
