@@ -42,8 +42,14 @@ Num a => a -> a -> a means: Let a be a type belonging to the Num type class. Thi
 
 Haskell no function really has two arguments. Instead all functions have only one argument. But we will note that taking two arguments is equivalent to taking one argument and returning a function taking the second argument as a parameter.
 
+## Strings
+In Haskell strings are list of Char.
+
+## Tuples
+The type of couple is (a,b). Elements in a tuple can have different types. Lists are different to tuples because all elements in Lists must have the same Type.
+
 
 # Upto
 http://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way
 
-Essential Haskell
+Deal with parentheses
