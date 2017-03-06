@@ -38,6 +38,10 @@ f :: Num a => a -> a -> a
 ```
 Num is a type class. A type class can be understood as a set of types. Num contains only types which behave like numbers. More precisely, Num is class containing types which implement a specific list of functions, and in particular (+) and (*).
 
+Num a => a -> a -> a means: Let a be a type belonging to the Num type class. This is a function from type a to (a -> a).
+
+Haskell no function really has two arguments. Instead all functions have only one argument. But we will note that taking two arguments is equivalent to taking one argument and returning a function taking the second argument as a parameter.
+
 
 # Upto
 http://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way
