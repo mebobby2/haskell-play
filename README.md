@@ -46,4 +46,4 @@ Haskell no function really has two arguments. Instead all functions have only on
 # Upto
 http://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way
 
-But, what type should we declare? To discover the type Haskell has found for us, just launch ghci
+Essential Haskell
