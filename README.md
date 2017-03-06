@@ -28,6 +28,17 @@ f x y = x*x + y*y
 main = print (f 2.3 4.2) # it works!
 ```
 
+## Parametric Polymorphism
+Instead of having a forced type like in C and having to declare a function for int, long, float, double, etc., we declare only one function like in a dynamically typed language. E.g.
+```
+let f x y = x*x + y*y
+
+:type f
+f :: Num a => a -> a -> a
+```
+Num is a type class. A type class can be understood as a set of types. Num contains only types which behave like numbers. More precisely, Num is class containing types which implement a specific list of functions, and in particular (+) and (*).
+
+
 # Upto
 http://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way
 
