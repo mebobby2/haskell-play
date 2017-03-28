@@ -80,6 +80,16 @@ But we don't always want to be writing parenthesis, especially we functions star
 take 1 $ filter even [1..10]
 ```
 
+## How to read types
+
+x :: Int            ⇔ x is of type Int
+x :: a              ⇔ x can be of any type
+x :: Num a => a     ⇔ x can be any type a
+                      such that a belongs to Num type class
+f :: a -> b         ⇔ f is a function from a to b
+f :: a -> b -> c    ⇔ f is a function from a to (b→c)
+f :: (a -> b) -> c  ⇔ f is a function from (a→b) to c
+
 
 
 # Upto
