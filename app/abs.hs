@@ -8,4 +8,5 @@ absolute' x
 main = do
   print "Enter a number"
   num <- readLn :: IO Int
-  print (num ++ " in abs form is " ++ (absolute num!!0))
+  --print (show num ++ " in absolute form is " ++ (show (absolute num)))
+  print (show num ++ " in absolute form is " ++ (show $ absolute num))
