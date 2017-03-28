@@ -98,5 +98,3 @@ f :: (a -> b) -> c  ⇔ f is a function from (a→b) to c
 http://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way
 
 3. Hard Part
-
-before that: try to understand getting rid of parenthesis, specifically, the $ and . operators
