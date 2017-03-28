@@ -97,4 +97,6 @@ f :: (a -> b) -> c  ⇔ f is a function from (a→b) to c
 # Upto
 http://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way
 
-Deal with parentheses
+An implementation of the absolute function.
+
+before that, get abs.hs to compile and work
