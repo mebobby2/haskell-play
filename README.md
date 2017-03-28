@@ -48,6 +48,39 @@ In Haskell strings are list of Char.
 ## Tuples
 The type of couple is (a,b). Elements in a tuple can have different types. Lists are different to tuples because all elements in Lists must have the same Type.
 
+## The $ operator
+
+The $ sign as a replacement for parenthesis. For example, the following expression:
+
+```
+take 1 $ filter even [1..10]
+-- = [2]
+```
+
+What happens if we don't put the $? Then would get
+```
+take 1 filter even [1..10]
+```
+and the compiler would now complain, because it would think we're trying to apply 4 arguments to the take function, with the arguments being ```1 :: Int```, ```filter :: (a -> Bool) -> [a] -> [a]```, ```even :: Integral a => a -> Bool```, ```[1..10] :: [Int]```.
+
+This is obviously incorrect. So what can we do instead? Well, we could put parenthesis around our expression:
+```
+(take 1) (filter even [1..10])
+```
+This would no reduce to:
+```
+(take 1) ([2,4,6,8,10])
+```
+which then becomes:
+```
+take 1 [2,4,6,8,10]
+```
+But we don't always want to be writing parenthesis, especially we functions start getting nested in each other. An alternative is to place the $ sign between where the pair of parenthesis would go, which in this case would be:
+```
+take 1 $ filter even [1..10]
+```
+
+
 
 # Upto
 http://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way
