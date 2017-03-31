@@ -97,4 +97,4 @@ f :: (a -> b) -> c  ⇔ f is a function from (a→b) to c
 # Upto
 http://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way
 
-3. Hard Part
+3.2.3 Recursive type
