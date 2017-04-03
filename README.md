@@ -92,9 +92,16 @@ f :: a -> b -> c    ⇔ f is a function from a to (b→c)
 f :: (a -> b) -> c  ⇔ f is a function from (a→b) to c
 ```
 
+## Summary of IO
+* in the do block, each expression must have the type IO a. You are then limited with regard to the range of expressions available. For example, getLine, print, putStrLn, etc…
+
+* Try to externalize the pure functions as much as possible.
+
+* the IO a type means: an IO action which returns an element of type a. IO represents actions; under the hood, IO a is the type of a function.
+
 
 
 # Upto
 http://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way
 
-Our next iteration will be to prompt the user again and again until she enters a valid answer.
+4.2 IO trick explained
