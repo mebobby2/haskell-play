@@ -104,4 +104,4 @@ f :: (a -> b) -> c  ⇔ f is a function from (a→b) to c
 # Upto
 http://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way
 
-4.2 IO trick explained
+4.3 Monads
