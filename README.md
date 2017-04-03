@@ -99,6 +99,10 @@ f :: (a -> b) -> c  ⇔ f is a function from (a→b) to c
 
 * the IO a type means: an IO action which returns an element of type a. IO represents actions; under the hood, IO a is the type of a function.
 
+## Mondas
+
+Monad are not necessarily about effects! There are a lot of pure monads. Monad are more about sequencing.
+
 
 
 # Upto
