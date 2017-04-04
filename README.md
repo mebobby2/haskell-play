@@ -99,13 +99,18 @@ f :: (a -> b) -> c  ⇔ f is a function from (a→b) to c
 
 * the IO a type means: an IO action which returns an element of type a. IO represents actions; under the hood, IO a is the type of a function.
 
-## Mondas
+## Monads
 
 Monad are not necessarily about effects! There are a lot of pure monads. Monad are more about sequencing.
 
+They are usefil for:
+* IO
+* non-deterministic computation
+* generating pseudo random numbers
+* keeping configuration state
+* writing state
 
 
-# Upto
+
+# Reference
 http://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way
-
-4.3 Monads
