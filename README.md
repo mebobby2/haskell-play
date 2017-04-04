@@ -103,7 +103,7 @@ f :: (a -> b) -> c  ⇔ f is a function from (a→b) to c
 
 Monad are not necessarily about effects! There are a lot of pure monads. Monad are more about sequencing.
 
-They are usefil for:
+They are useful for:
 * IO
 * non-deterministic computation
 * generating pseudo random numbers
